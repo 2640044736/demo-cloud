@@ -1,0 +1,14 @@
+﻿spring:
+    prpfiles:
+        active:
+        - dev
+---
+spring:
+    prpfiles: dev
+    application:
+        name: mycloud-config-dev
+---
+spring:
+    prpfiles: test
+    application:
+        name: mycloud-config-test

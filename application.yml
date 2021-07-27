@@ -1,14 +1,15 @@
 ﻿spring:
-    prpfiles:
-        active:
+    profiles:
+        actice:
         - dev
 ---
+server:
+    port: 8201
 spring:
-    prpfiles: dev
+    profiles: dev
     application:
-        name: mycloud-config-dev
----
-spring:
-    prpfiles: test
-    application:
-        name: mycloud-config-test
+        name: configClient
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:7001/eureka/
